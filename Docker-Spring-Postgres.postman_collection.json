@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "f23e4653-0123-43b5-8548-dbefdc84f8d3",
+		"name": "Docker-Spring-Postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22605599"
+	},
+	"item": [
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/all",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Kieran\",\r\n    \"lastName\": \"hastings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/user",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
