@@ -7,7 +7,7 @@ A guide to setting up a spring boot application with a postgres database that is
 4. To access the pgAdmin browser in your search engine of choice search `localhost:5050` and log in using the credentials: Username: **admin@admin.com** **Password: root**
 
 Testing 
-* 
+
 * To test the creation of the API use POSTMAN.
 * Import the postman collection found in this repository into your desktop version of POSTMAN.
 **Testing Get Request**
