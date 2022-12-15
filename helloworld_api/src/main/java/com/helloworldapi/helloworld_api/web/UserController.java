@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+
 import com.helloworldapi.helloworld_api.Entity.User;
 import com.helloworldapi.helloworld_api.service.UserService;
 
@@ -21,7 +22,7 @@ public class UserController {
     
     UserService userService;
     
-    @GetMapping("/users")
+    @GetMapping("/all")
     public ResponseEntity<List<User>> getUsers(){
 
         return new ResponseEntity<>(userService.getListOfUsers(), HttpStatus.OK);

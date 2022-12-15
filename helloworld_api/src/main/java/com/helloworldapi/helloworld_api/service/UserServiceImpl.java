@@ -9,12 +9,14 @@ import com.helloworldapi.helloworld_api.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
 
-@Service
+
 @AllArgsConstructor
+@Service
 public class UserServiceImpl implements UserService{
 
     private UserRepository userRepository;
 
+    @Override
     public List<User> getListOfUsers(){
         return userRepository.findAll();
     }
